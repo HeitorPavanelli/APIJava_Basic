@@ -2,16 +2,14 @@ package test.repo.demo.api_view.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+// import javax.persistence.GeneratedValue;
+// import javax.persistence.GenerationType;
 
 @Entity
-public class Endereco {
-    
+public class Endereco {    
+    // @GeneratedValue(strategy = GenerationType.AUTO)
+    // private Long id;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
     private String cep;
     private String logradouro;
     private String complemento;
